@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosco Coiffure - À propos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">BARBERSHOP</a>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html"> <i class="fas fa-home"></i> Accueil</a>
+                </li>
+                <li>
+                    <a href="services.html"> <i class="fas fa-concierge-bell"></i> Autres services</a>
+                </li>
+                <li>
+                    <a href="apropos.html"> <i class="fas fa-info-circle"></i> À propos</a>
+                </li>
+                 <li><button id="toggleMode"><i class="fas fa-moon"></i></button>mode sombre</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section class="about-section">
+        <h4>À propos de Bosco Coiffure</h4>
+        <br>
+        <p>Chez Bosco Coiffure, nous pensons que votre chevelure est le reflet de votre personnalité.</p>
+        <p>Situé à RIMKETA, notre salon est un espace dédié à la transformation et à la détente.</p>
+        <p>Que vous veniez pour un entretien classique ou un changement radical, BOSCO et son équipe mettent leur expertise à votre service pour un résultat sur-mesure.</p>
+    </section>
+
+    <!-- Section Formulaire de contact -->
+    <section class="contact-section">
+        <h2> Contactez-nous</h2>
+        
+        <!-- 
+            FORMULAIRE DE CONTACT
+            id="contact-form" → utilisé par JavaScript pour trouver le formulaire
+            action → URL où les données sont envoyées (Formspree)
+            IMPORTANT : Remplacez l'URL par votre propre URL Formspree
+        -->
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgvazgwk" method="POST">
+            <input type="text" name="nom" placeholder="Votre nom complet" required>
+            <input type="email" name="email" placeholder="Votre adresse email" required>
+            <input type="tel" name="telephone" placeholder="Votre téléphone">
+            <select name="sujet" required>
+                <option value="">-- Sélectionnez un sujet --</option>
+                <option>Prise de RDV coiffure</option>
+                <option>Commande de produits</option>
+                <option>Question sur matériel</option>
+                <option>Autre demande</option>
+            </select>
+            <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+            <button type="submit">Envoyer le message</button>
+        </form>
+        
+        <!-- Message de succès (caché par défaut, affiché après envoi) -->
+        <div class="success-message" id="success-message">
+             Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+        </div>
+    </section>
+
+    <!-- Pied de page (optionnel, ajouté pour la cohérence) -->
+    <footer class="footer-salon">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bosco Coiffure - Tous droits réservés</p>
+            <p><em>Fait avec passion pour vos cheveux.</em></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

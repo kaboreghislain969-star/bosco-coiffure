@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosco Coiffure - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Correction : un h1 n'a pas d'attribut href -->
+        <div class="logo">BARBERSHOP</div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> <i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="services.html"> <i class="fas fa-concierge-bell"></i> Autres services</a></li>
+                <li><a href="apropos.html"> <i class="fas fa-info-circle"></i> À propos</a></li>
+                <li><button id="toggleMode"><i class="fas fa-moon"></i></button>mode sombre</li>
+            </ul>
+           
+          <!-- <button id="theme-toggle"> Mode sombre</button>-->
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="home">
+            <h1>Bienvenue chez <br> Bosco Coiffure</h1>
+            <div class="images">
+                <!-- Vérifiez que le chemin images/logo.jpg existe -->
+                <img src="images/logo.jpeg" alt="Bosco Coiffure" class="centre-images">
+            </div>
+        </div>
+    </main>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>L'art de la coiffure</h1>
+            <p>Sublimez votre style avec nos experts</p>        
+        </div>
+
+        <div class="services-grid">
+            <!-- Carte Femme -->
+            <div class="card">
+                <div class="card-image" onclick="location.href='services.html#femme'">
+                    <img src="images/1.jpeg" alt="Coupe Femme">
+                </div>
+                <div class="card-content">
+                    <h3>Coupes classiques pour Femmes</h3>
+                    <p>Redécouvrez les classiques de la coiffure féminine avec nos techniques de coupe aux ciseaux et au rasoir.</p>
+                </div>
+            </div>
+
+            <!-- Carte Homme -->
+            <div class="card invert">
+                <div class="card-content">
+                    <h3>Coupes classiques pour Hommes</h3>
+                    <p>Redécouvrez les classiques de la coiffure masculine avec nos techniques de coupe aux ciseaux et au rasoir.</p>   
+                </div>
+                <div class="card-image" onclick="location.href='services.html#homme'">
+                    <img src="images/2.jpeg" alt="Barber">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-salon">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <a href="#" class="btn-rdv">Prendre Rendez-vous</a>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">   
+                    <h4>Contact & Adresse</h4>
+                    <p><i class="fa-solid fa-map-pin"></i> RIMKETA</p>
+                    <p><i class="fa-solid fa-phone"></i> 57 36 70 04</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: Contact@bosco-coiffure.com</p>       
+                </div>
+
+                <div class="footer-col">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li>Coupes Homme / Femme</li>
+                        <li>Colorations & balayages</li>
+                        <li>Soins Profonds & spa</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Horaires</h4>
+                    <p>Mardi au Dimanche : 8h30 - 18h00</p>
+                    <p>Lundi : Fermé</p>
+                </div>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bosco Coiffure - Tous droits réservés</p>
+                <p><em>Fait avec passion pour vos cheveux.</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22600000000" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
